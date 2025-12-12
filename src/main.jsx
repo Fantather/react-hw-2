@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 
 import { ColorChanger } from './ColorChanger/ColorChanger.jsx'
 import { Counter } from './Counter/Counter.jsx'
+import { ButtonWithLimit } from './ButtonWithLimit/ButtonWithLimit.jsx'
+import { DataLoader } from './DataLoader/DataLoader.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -11,5 +13,10 @@ createRoot(document.getElementById('root')).render(
     <hr />
     <Counter />
     <hr />
+    <ButtonWithLimit />
+    <hr />
+    <DataLoader />
+    <hr />
+    <ShouldComponentUpdate />
   </StrictMode>,
 )
