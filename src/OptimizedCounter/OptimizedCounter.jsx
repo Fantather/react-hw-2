@@ -15,14 +15,10 @@ export class OptimizedCounter extends React.Component
         }
     }
 
+    // Я так понял, nextProps мне не нужен
     shouldComponentUpdate(nextProps, nextState)
     {
-        if((nextProps.currentValue % 2) === 0 || (nextState.currentValue % 2) === 0)
-        {
-            return true;
-        }
-
-        return false;
+        return (nextState.currentValue % 2) === 0;
     }
 
     handleIncreaseClick = () => {
