@@ -15,7 +15,7 @@ export class OptimizedCounter extends React.Component
         }
     }
 
-    // Я так понял, nextProps мне не нужен
+    // Я так понял, nextProps мне не нужно использовать
     shouldComponentUpdate(nextProps, nextState)
     {
         return (nextState.currentValue % 2) === 0;
