@@ -5,7 +5,7 @@
 
 import React from "react";
 
-export class ShouldComponentUpdate extends React.Component
+export class OptimizedCounter extends React.Component
 {
     constructor(props)
     {

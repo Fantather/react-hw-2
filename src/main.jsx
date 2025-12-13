@@ -5,6 +5,7 @@ import { ColorChanger } from './ColorChanger/ColorChanger.jsx'
 import { Counter } from './Counter/Counter.jsx'
 import { ButtonWithLimit } from './ButtonWithLimit/ButtonWithLimit.jsx'
 import { DataLoader } from './DataLoader/DataLoader.jsx'
+import { OptimizedCounter } from './OptimizedCounter/OptimizedCounter.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -17,6 +18,6 @@ createRoot(document.getElementById('root')).render(
     <hr />
     <DataLoader />
     <hr />
-    <ShouldComponentUpdate />
+    <OptimizedCounter />
   </StrictMode>,
 )
